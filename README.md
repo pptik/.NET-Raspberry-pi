@@ -75,6 +75,62 @@ Tools / Hardware yang digunakan:
      
      ![image](https://user-images.githubusercontent.com/18458955/84618346-183f1380-aefc-11ea-9f33-3719ed4210c7.png)
      
-     selanjut
+   6. Membuat contoh project console  *Hello Word* 
+      Sebelum membuat sebuah project harus membuat sebuah folder directory contoh: 
+      
+      
+      
+      ![image](https://user-images.githubusercontent.com/18458955/84619496-70c3e000-aeff-11ea-80c8-f686aa76d0a3.png)
+      
+      Setelah itu jalankan perintah 
+      ```
+      dotnet new console
+      ```
+      
+      
+      
+      ![image](https://user-images.githubusercontent.com/18458955/84619671-f5aef980-aeff-11ea-8f5b-32d37dda61e3.png)
+      
+      
+      
+      Ketika membuat *new console* maka secara default yang dubuat adalah program *Hello World*
+      Untuk menjalankan program dapat dilakukan dengan perintah:
+      ```
+      dotnet run
+      ```
+      
+      **Run perintah di folder project**
+      
+      
+      
+      ![image](https://user-images.githubusercontent.com/18458955/84619943-d2d11500-af00-11ea-98e9-0aff609853ae.png)
+      
+      
+      Untuk edit program dapat dilakukan dengan meenggunakan basic code editor dengan perintah:
+      ```
+      Sudo nano Program.cs
+      ```
+      
+      ![image](https://user-images.githubusercontent.com/18458955/84620155-6571b400-af01-11ea-960b-9095cc2c3049.png)
+      
+      Ada banyak code editor yang digunakan untuk edit file source code diantara lain:
+      - basic code editor (nano)
+      - Vim
+      - (Rekomendasi) Visual Studio Code
+      
+      
+   7. Intall visual studio Code 
+      
+      
 
+      
+      
+      
+
+      
      
+
+
+
+      
+

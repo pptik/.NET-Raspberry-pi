@@ -119,9 +119,66 @@ Tools / Hardware yang digunakan:
       - (Rekomendasi) Visual Studio Code
       
       
-   7. Intall visual studio Code 
+   7. Install visual studio Code 
+      Untuk install visual studio code dapat dilihat pada tutorial berikut:
+      ```
+      https://medium.com/@melzoghbi/install-visual-studio-code-on-raspbian-eedc566c616d
+      
+      ```
+      
+   8. Mengakses raspberry untuk keperluan membuat project,debug dan lain-lain
+        - Pastikan SSH pada raspberry sudah di aktifkan, untuk mengakitfkannya dapat menggunakan perintah berikut:
+          ```
+          Sudo raspi-config
+          ```
+          
+          
+          ![image](https://user-images.githubusercontent.com/18458955/84622743-f0ee4380-af07-11ea-8892-7a6572ebf7e2.png)
+          
+          Masuk ke menu *Interfacing Location* pilih *SSH* dan pilih *enabled*
+          
+         - Mengakses SSH rapsberry menggunakan Visual studio code (**Sebagai Remote**)
+         Pada visual studio install plugin Remote-SSH https://code.visualstudio.com/blogs/2019/07/25/remote-ssh
+         
+         Setelah di install reload visual studi code dan tekan *Ctrl+Shift+P* maka akan muncul dialog seperti berikut:
+         
+         ![image](https://user-images.githubusercontent.com/18458955/84623253-1465be00-af09-11ea-973a-e58882b58499.png)
+         
+         pilih *Connet to Host*
+         
+         Masukan username dan ip host, karena raspberry pada instalasi biasnya menggunakan username default yaitu *pi* contoh:
+         ```
+         pi@192.168.x.x
+         ```
+         
+         kemudian masukan password,jika pada waktu instalasi masih setting default maka passwornya adalah *raspberry*
+         
+         Jika sudah makan akan tampil seperti berikut :
+         
+         ![image](https://user-images.githubusercontent.com/18458955/84623716-0fedd500-af0a-11ea-989a-175869902b0b.png)
+         
+   9. Menambahkan nuget package pada project di Visual studio code
+      Untuk menambahkan nuget package harus menginstall plugin https://marketplace.visualstudio.com/items?itemName=NuGetTeam.NuGetPackageManager
+      Jika sudah berhasil di install reload visual studio code
+      
+      setelah itu tekan *Ctrl+shift+P* makan akan muncul dialog pilih *Nuget Package Manager: Add Package*
+      Masukan nama package yang akan di install
+      Pilih versi package
+      
+      Setelah itu gunakan perintah berikut untuk rebuild project
+      ```
+      dotnet restore
+      dotnet run
+      ```
       
       
+         
+         
+#**Contoh Program**
+
+         
+          
+
 
       
       
